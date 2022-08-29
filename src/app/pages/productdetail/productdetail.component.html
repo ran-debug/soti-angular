@@ -1,0 +1,14 @@
+
+<app-navbar></app-navbar>
+<div class="card" style="width: 40rem;">
+    <img src="{{'http://rjtmobile.com/grocery/images/' + arr.image}}" class="card-img-top" alt="...">
+    <div class="card-body">
+        <h5>{{arr.productName}}</h5>
+      <p class="card-text">price: {{arr.price | currency:'INR'}}
+        <span>
+            <del>{{arr.mrp | currency : 'INR'}}</del>
+        </span>
+      </p>
+      <button class="btn btn-primary btn-block">Add to cart</button>
+    </div>
+  </div>

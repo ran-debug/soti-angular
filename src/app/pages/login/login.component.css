@@ -1,0 +1,11 @@
+
+.container{
+    background-color: #ccc;
+    width: 500px;
+    margin-top: 150px;
+    padding: 3px;
+}
+.wrap{
+    font-style: italic;
+    text-align: center;
+}

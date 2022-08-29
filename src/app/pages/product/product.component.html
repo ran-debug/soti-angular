@@ -1,0 +1,14 @@
+<app-navbar></app-navbar>
+<div style="margin:50px;" class="row">
+  <div class="column col-lg-4">
+    <h2>Sub-Category</h2>
+    <ul class="list-group">
+      <a *ngFor="let ele of subCategory" routerLink="{{'/productSub/' + ele.subId}}">
+        <li class="list-group-item">{{ele.subName}}</li>
+      </a>
+    </ul>
+  </div>
+  <div class="column col-lg-8">
+    <h2>product-details</h2>
+  </div>
+</div>

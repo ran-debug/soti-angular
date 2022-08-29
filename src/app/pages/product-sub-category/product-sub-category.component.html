@@ -1,0 +1,27 @@
+<app-navbar></app-navbar>
+<div class="row">
+    <div class="col-lg-4">
+    </div>
+    <div class="col-lg-8">
+        <h2>product-details</h2>
+        <div class="row">
+            <div class="col-sm-3" *ngFor="let ele of productSub">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="{{ 'http://rjtmobile.com/grocery/images/'+ ele.image }}" class="card-img-top"
+                            alt="..." />
+                        <h5 class="card-title">{{ele.productName}}</h5>
+                        <p class="card-text">price:{{ele.price | currency:'INR'}}
+                            <span class="mrp">
+                                <del>
+                                    {{ele.mrp | currency:'INR'}}
+                                </del>
+                            </span>
+                        </p>
+                        <button class="btn btn-primary" (click)="onclik(ele._id)">Go</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
